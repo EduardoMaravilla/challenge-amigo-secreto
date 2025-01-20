@@ -76,5 +76,10 @@ function sortearAmigo() {
   const amigoSorteado = listaAmigos[indiceSorteo];
 
   // Mostrar el resultado del sorteo
-  document.getElementById("resultado").innerHTML = `<p>Amigo sorteado: <strong>${amigoSorteado}</strong></p>`;
+  document.getElementById(
+    "resultado"
+  ).innerHTML = `<p>Amigo sorteado: <strong>${amigoSorteado}</strong></p>`;
+
+  // Oculta los demas amigos
+  document.getElementById("listaAmigos").innerHTML = "";
 }
